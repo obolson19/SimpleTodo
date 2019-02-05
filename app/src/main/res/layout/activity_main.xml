@@ -4,7 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@drawable/bobo"
+    >
 
     <Button
         android:id="@+id/btnAdditem"
@@ -16,19 +18,22 @@
         android:layout_marginBottom="0dp"
         android:onClick="onAddItem"
         android:text="Add"
+        android:textColor="@color/colorAccent"
+        android:background="@color/colorPrimary"
         tools:layout_editor_absoluteX="328dp"
         tools:layout_editor_absoluteY="545dp" />
 
     <ListView
         android:id="@+id/lvitems"
         android:layout_width="match_parent"
-        android:layout_height="447dp"
+        android:layout_height="match_parent"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_marginEnd="0dp"
         android:layout_marginBottom="111dp"
         tools:layout_editor_absoluteX="3dp"
-        tools:layout_editor_absoluteY="0dp" />
+        tools:layout_editor_absoluteY="0dp"
+        />
 
     <EditText
         android:id="@+id/etNewItem"
@@ -40,6 +45,7 @@
         android:layout_marginBottom="0dp"
         android:ems="10"
         android:hint="Add a new item"
+        android:textColorHint="@color/colorAccent"
         android:inputType="textPersonName" />
 
 </RelativeLayout>
